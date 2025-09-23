@@ -1,6 +1,6 @@
 export default {
-  name: 'home_banners',
-  title: 'Home Banners',
+  name: 'jersey_banners',
+  title: 'Jersey Banners',
   type: 'document',
   fields: [
     {
@@ -9,12 +9,14 @@ export default {
     },
     {
       name: 'images',
-      title: 'Upload Banner Images',
       type: 'array',
+      title: 'Upload Jersey Banner Images',
       of: [
         {
           type: 'image',
-          options: {hotspot: true},
+          options: {
+            hotspot: true,
+          },
         },
       ],
     },
