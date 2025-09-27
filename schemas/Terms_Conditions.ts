@@ -1,14 +1,16 @@
-export default {
+import {defineField, defineType} from 'sanity'
+
+export default defineType({
   name: 'terms_and_conditions',
   type: 'document',
   title: 'Terms and Conditions',
   fields: [
-    {
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
-    },
-    {
+    }),
+    defineField({
       name: 'content',
       title: 'Content',
       type: 'array',
@@ -21,6 +23,6 @@ export default {
           options: {hotspot: true},
         },
       ],
-    },
+    }),
   ],
-}
+})

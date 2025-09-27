@@ -1,4 +1,6 @@
-export default {
+import {defineType} from 'sanity'
+
+export default defineType({
   name: 'themes',
   title: 'App Themes',
   type: 'document',
@@ -58,4 +60,4 @@ export default {
       ],
     },
   ],
-}
+})
